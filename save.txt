@@ -1,0 +1,19 @@
+company : evian | price : 3500 
+name :  water
+
+company : coka | price : 1050 
+name :  coke
+
+company : coka | price : 1050 
+name :  sprite
+
+company : delmonte | price : 1400 
+name :  orange
+
+company : delmonte | price : 1400 
+name :  apple
+
+company : delmonte | price : 1750 
+name :  mango
+
+

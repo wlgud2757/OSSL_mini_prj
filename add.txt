@@ -1,0 +1,2 @@
+lotte 1000 coffee
+lotte 2000 snack
