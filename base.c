@@ -172,10 +172,12 @@ void delete_specific_product(Record *records[], int count){
   printf("\n%d product deleted!\n\n", option);
 }
 
-void delete_all_product(Record *records[], int count){
+int delete_all_product(Record *records[], int count){
   for(int i=0; i<count; i++) {
     free(records[i]);
   }
+  count = 0;
   printf("\nAll product deleted!\n\n");
+  return count;
 }
 

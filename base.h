@@ -17,6 +17,6 @@ void save_all_product(Record *records[], int count);
 void change_information_product(Record *records[], int count);
 void apply_sale_product(Record *records[], int count);
 void delete_specific_product(Record *records[], int count);
-void delete_all_product(Record *records[], int count);
+int delete_all_product(Record *records[], int count);
 
 #endif

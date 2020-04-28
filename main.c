@@ -54,7 +54,7 @@ int input_handler(char input[], Record *records[], int count){
 	else if(!strcmp(input, "8"))
 		delete_specific_product(records, count);	
 	else if(!strcmp(input, "9"))
-		delete_all_product(records, count);	
+		count = delete_all_product(records, count);	
 	else if(!strcmp(input, "10"))
 		printf("Terminating... bye!\n"); // Quit - no operation (an empty statement with a semi-colon)
 	else
@@ -76,7 +76,7 @@ void display_menu(){
 	printf("******************************\n");
 	printf(" CVS product management system \n");
 	printf("******************************\n");
-  printf(" 0. Reset to original data\n");
+        printf(" 0. Reset to original data\n");
 	printf(" 1. Add a new product\n");
 	printf(" 2. Load product by previous data\n");
 	printf(" 3. Print all product\n");
