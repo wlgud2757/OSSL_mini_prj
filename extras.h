@@ -4,7 +4,8 @@
 #include "record.h"
 
 // function prototypes
-int defragment(Record[]);
+void erase_data(Record* records[], int count);
+int defragment(Record *records[], int count);
 void display_stats(Record[]);
 
 #endif

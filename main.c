@@ -16,7 +16,7 @@ int main(){
 	Record *records[MAX_RECORDS]; // struct pointer
   int count = 0; // product count
 	char user_input[64] = "";
-	while(strcmp(user_input, "99") != 0){
+	while(strcmp(user_input, "11") != 0){
 		display_menu();
 		printf("\nSelect a menu> ");
 		fgets(user_input, 64, stdin);
@@ -55,7 +55,9 @@ int input_handler(char input[], Record *records[], int count){
 		delete_specific_product(records, count);	
 	else if(!strcmp(input, "9"))
 		count = delete_all_product(records, count);	
-	else if(!strcmp(input, "10"))
+  else if(!strcmp(input, "10"))
+		count = defragment(records, count);	
+	else if(!strcmp(input, "11"))
 		printf("Terminating... bye!\n"); // Quit - no operation (an empty statement with a semi-colon)
 	else
 		printf("Unknown menu: %s \n\n", input);
@@ -86,5 +88,6 @@ void display_menu(){
 	printf(" 7. Save all product\n");
 	printf(" 8. Delete specific products\n");
 	printf(" 9. Delete all product\n");
-	printf(" 10. Quit\n");
+  printf(" 10. Execute defragmentation\n");
+	printf(" 11. Quit\n");
 }
